@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>임수호 | 콘텐츠 기획자 포트폴리오</title>
+    <style>
+        /* 기본 스타일 및 폰트 설정 */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 헤더 섹션 */
+        header {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border-bottom: 1px solid #333;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+        }
+        
+        header p {
+            color: #aaaaaa;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            font-weight: 300;
+        }
+
+        /* 콘텐츠 그리드 레이아웃 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #e50914;
+            padding-left: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        /* 개별 카드 스타일 */
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card iframe {
+            width: 100%;
+            height: 570px; /* 유튜브 쇼츠 비율에 맞춤 */
+            border: none;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+        }
+
+        .card-content p {
+            color: #bbbbbb;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        /* 버튼 스타일 */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #e50914;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #f6121d;
+        }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+            background-color: #0a0a0a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>임수호</h1>
+        <p>콘텐츠 기획자 포트폴리오 | "재밌는걸 하며 살자"</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">주요 작업물</h2>
+        
+        <div class="grid">
+            
+            <div class="card">
+                <img src="e7a73e7a-7c70-4975-a4a8-db3a103050ee.png" alt="Riot Safe-Shot Combo Set 기획">
+                <div class="card-content">
+                    <h3>ALL-IN-ONE SAFE-SHOT 기획</h3>
+                    <p>자이언트 키보드 쿠션, 티모 스트레스 볼, 스파이크 스트레스 마우스 등 게이머를 위한 실물 굿즈 기획 및 디자인 제안.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=800" alt="Lunchfishing 프로젝트 (대체 이미지)">
+                <div class="card-content">
+                    <h3>점심 낚시 (Lunchfishing) 웹 서비스</h3>
+                    <p>AI 기반의 재미있는 인터랙티브 웹 애플리케이션 프로젝트입니다.</p>
+                    <a href="https://lunchfishing.aiapp.link/" target="_blank" class="btn">웹사이트 방문하기</a>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title" style="margin-top: 4rem;">영상 콘텐츠 (Shorts)</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/7d-y_tJWIo4" title="YouTube Shorts 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-content">
+                    <h3>영상 프로젝트 1</h3>
+                    <p>짧은 시간 안에 시청자의 이목을 끄는 숏폼 영상 콘텐츠입니다.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <iframe src="https://www.youtube.com/embed/jTiV2cEjhFo" title="YouTube Shorts 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="card-content">
+                    <h3>영상 프로젝트 2</h3>
+                    <p>감각적인 편집과 기획이 돋보이는 두 번째 숏폼 콘텐츠입니다.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 임수호. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
